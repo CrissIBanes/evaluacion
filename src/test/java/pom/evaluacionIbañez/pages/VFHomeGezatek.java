@@ -19,8 +19,12 @@ public class VFHomeGezatek extends SeleniumBase {
         super(driver, wait);
     }
     public void goProductos (){
+        /***
+         * @function : Carga la pagina www.gezatek.com.ar y navega hacia la seccion "Productos"
+         */
         goToUrl("https://www.gezatek.com.ar/");
         click(botonProductos);
+
     }
     public void seleccionarProducto () throws InterruptedException {
         Thread.sleep(500);
